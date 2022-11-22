@@ -90,4 +90,10 @@ print(myTable)
 
 #Exercice 4 :
 
-#Le tri à bulle est considéré lent puisqu'il 
+# Le tri à bulle est considéré lent puisqu'il déplace case par case l'élémet qu'il trouve plus grand à un instant t 
+# là ou les algorithmes vu précédemment recherchaient directement la valeur la plus petite (ou la plus grande) avant
+# de la placer au début ou à la fin. Ici beaucoup plus d'attributions mémoires sont effectuées à chaque tour de boucle
+# ce qui ralentit la résolution total de l'algorithme (entre 2 et 3 fois plus long pour chaque tour environ ? puisque
+# 2 attribution en plus minimum). Il est cependant possible d'optimiser cet algorithme, puisque le tableau peut être 
+# trié avant la fin de toutes les boucles. Il faudrait vérifier à chaque tour si ce dernier est complétement trié et
+# décider de ne plus rentrer dans la boucle.
