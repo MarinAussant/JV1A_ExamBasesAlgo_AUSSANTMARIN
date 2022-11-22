@@ -55,9 +55,39 @@ print("Tableau rangé avec une seule itération :")
 print(myTable)
 
 
-#Exercice 2 :
+#Exercice 3 :
 print(" ")
 print(" ")
 print("-----------------------------------")
-print("Exercice 2 :")
+print("Exercice 3 :")
 print(" ")
+
+#je régénère un tableau ici pour ne pas avoir les conséquences des exo précédents :  
+myTable = []
+for i in range(0,nbElmtTab):
+    myTable.append(random.randint(1,99))
+
+print("Tableau de base :")
+print(myTable)
+
+print(" ")
+estTrie = False
+for l in range(0,len(myTable)):
+   
+    for k in range(0,len(myTable)-(1+l)):
+
+        elmtAct = myTable[k]
+     
+        if (myTable[k+1]<elmtAct):
+
+        
+            temp = myTable[k+1]
+            myTable[k+1] = elmtAct
+            myTable[k] = temp
+
+print("Tableau rangé avec tri à bulle:")
+print(myTable)
+
+#Exercice 4 :
+
+#Le tri à bulle est considéré lent puisqu'il 
